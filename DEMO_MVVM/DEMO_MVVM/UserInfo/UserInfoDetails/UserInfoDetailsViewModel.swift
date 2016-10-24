@@ -5,4 +5,7 @@ class UserInfoDetailsViewModel {
         self.model = model
     }
     
+    var userInfo: String {
+        return "name: \(model.name)\nage: \(model.age)\nphone number: \(model.phoneNumber)\naddress: \(model.address)"
+    }
 }

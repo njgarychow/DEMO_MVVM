@@ -59,12 +59,27 @@
                     <view key="view" contentMode="scaleToFill" id="3qm-xW-LBE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9W-pX-Q09">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.29233427969999998" blue="0.36665329600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="n9W-pX-Q09" secondAttribute="trailing" id="G4E-1g-5yP"/>
+                            <constraint firstItem="n9W-pX-Q09" firstAttribute="top" secondItem="Zu6-gu-kWp" secondAttribute="bottom" constant="303" id="Vl3-hH-NnW"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="n9W-pX-Q09" secondAttribute="leading" id="gi6-bu-ewh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userInfoDetailsLabel" destination="n9W-pX-Q09" id="3eW-is-cLX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMx-g6-ZDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="655" y="98"/>
+            <point key="canvasLocation" x="653.60000000000002" y="97.601199400299862"/>
         </scene>
     </scenes>
 </document>
