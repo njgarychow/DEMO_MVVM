@@ -41,11 +41,30 @@
                     <connections>
                         <outlet property="retriveMoreButton" destination="I3L-QW-caA" id="3JH-W6-Wk2"/>
                         <outlet property="userInfoLabel" destination="zUG-Hi-hyi" id="XHk-Cj-GDY"/>
+                        <segue destination="WIq-1Y-wDX" kind="show" id="oAU-uu-rj2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Svy-SQ-bbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-231.19999999999999" y="97.601199400299862"/>
+        </scene>
+        <!--User Info Details View Controller-->
+        <scene sceneID="i1P-Ot-6jV">
+            <objects>
+                <viewController id="WIq-1Y-wDX" customClass="UserInfoDetailsViewController" customModule="DEMO_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zu6-gu-kWp"/>
+                        <viewControllerLayoutGuide type="bottom" id="IyN-kb-myT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3qm-xW-LBE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.29233427969999998" blue="0.36665329600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMx-g6-ZDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="655" y="98"/>
         </scene>
     </scenes>
 </document>

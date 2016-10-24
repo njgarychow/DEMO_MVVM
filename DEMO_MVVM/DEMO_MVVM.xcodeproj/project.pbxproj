@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		40A184CE1DBDE5E60044A26B /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A184CD1DBDE5E60044A26B /* UserInfoViewModel.swift */; };
 		40A184D01DBDE6720044A26B /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A184CF1DBDE6720044A26B /* UserInfoModel.swift */; };
+		40A184D21DBDF73B0044A26B /* UserInfoDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A184D11DBDF73B0044A26B /* UserInfoDetailsViewModel.swift */; };
+		40A184D41DBDF7580044A26B /* UserInfoDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A184D31DBDF7580044A26B /* UserInfoDetailsModel.swift */; };
 		40CA6D551DBDD7C0008CD888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA6D541DBDD7C0008CD888 /* AppDelegate.swift */; };
 		40CA6D571DBDD7C0008CD888 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA6D561DBDD7C0008CD888 /* ViewController.swift */; };
 		40CA6D5A1DBDD7C0008CD888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40CA6D581DBDD7C0008CD888 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		40A184CD1DBDE5E60044A26B /* UserInfoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 		40A184CF1DBDE6720044A26B /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		40A184D11DBDF73B0044A26B /* UserInfoDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoDetailsViewModel.swift; sourceTree = "<group>"; };
+		40A184D31DBDF7580044A26B /* UserInfoDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoDetailsModel.swift; sourceTree = "<group>"; };
 		40CA6D511DBDD7C0008CD888 /* DEMO_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEMO_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CA6D541DBDD7C0008CD888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40CA6D561DBDD7C0008CD888 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +102,9 @@
 		40CA6D691DBDDA54008CD888 /* UserInfoDetails */ = {
 			isa = PBXGroup;
 			children = (
+				40A184D31DBDF7580044A26B /* UserInfoDetailsModel.swift */,
 				40CA6D6C1DBDDB4C008CD888 /* UserInfoDetailsViewController.swift */,
+				40A184D11DBDF73B0044A26B /* UserInfoDetailsViewModel.swift */,
 			);
 			path = UserInfoDetails;
 			sourceTree = "<group>";
@@ -178,10 +184,12 @@
 			files = (
 				40A184D01DBDE6720044A26B /* UserInfoModel.swift in Sources */,
 				40CA6D571DBDD7C0008CD888 /* ViewController.swift in Sources */,
+				40A184D21DBDF73B0044A26B /* UserInfoDetailsViewModel.swift in Sources */,
 				40CA6D6B1DBDDA78008CD888 /* UserInfoViewController.swift in Sources */,
 				40A184CE1DBDE5E60044A26B /* UserInfoViewModel.swift in Sources */,
 				40CA6D6D1DBDDB4C008CD888 /* UserInfoDetailsViewController.swift in Sources */,
 				40CA6D551DBDD7C0008CD888 /* AppDelegate.swift in Sources */,
+				40A184D41DBDF7580044A26B /* UserInfoDetailsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
