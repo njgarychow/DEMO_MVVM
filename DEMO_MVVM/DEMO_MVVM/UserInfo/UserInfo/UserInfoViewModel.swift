@@ -12,9 +12,11 @@ class UserInfoViewModel {
         return "name: \(userInfo.name)\nage: \(userInfo.age)"
     }
     
-    func retriveMoreUserInfoDetails(completion: @escaping (() -> Void)) {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(2)) { 
-            completion()
+    func retriveMoreUserInfoDetails(completion: @escaping ((UserInfoDetailsViewModel) -> Void)) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(2)) {
+            let model = UserInfoDetailsModel(name: "jqzhou", age: 18, phoneNumber: "1561234567890", address: "tianfu software park unit E")
+            let viewModel = UserInfoDetailsViewModel(model: model)
+            completion(viewModel)
         }
     }
 }
