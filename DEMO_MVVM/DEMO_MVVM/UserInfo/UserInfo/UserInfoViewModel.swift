@@ -1,3 +1,5 @@
+import Foundation
+
 class UserInfoViewModel {
     
     private let userInfo: UserInfoModel
@@ -8,5 +10,11 @@ class UserInfoViewModel {
     
     var userInfoDescription: String {
         return "name: \(userInfo.name)\nage: \(userInfo.age)"
+    }
+    
+    func retriveMoreUserInfoDetails(completion: @escaping (() -> Void)) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(2)) { 
+            completion()
+        }
     }
 }

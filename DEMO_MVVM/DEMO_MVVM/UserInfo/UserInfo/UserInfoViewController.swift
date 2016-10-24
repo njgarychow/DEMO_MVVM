@@ -10,10 +10,16 @@ class UserInfoViewController: UIViewController {
         super.viewDidLoad()
         
         updateViews()
+        
+        retriveMoreButton.addTarget(self, action: #selector(retriveMoreButtonClicked), for: .touchUpInside)
     }
     
     func updateViews() {
         userInfoLabel.text = viewModel.userInfoDescription
+    }
+    
+    @objc func retriveMoreButtonClicked() {
+        
     }
     
 }

@@ -1,25 +1,21 @@
-//
-//  ViewController.swift
-//  DEMO_MVVM
-//
-//  Created by jqzhou  on 10/24/16.
-//  Copyright © 2016 thoughtworks. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        displayUserInfoPage()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func displayUserInfoPage() {
+        let stroyboard = UIStoryboard(name: "UserInfo", bundle: nil)
+        let viewController = stroyboard.instantiateInitialViewController() as! UserInfoViewController
+        let model = UserInfoModel(name: "jqzhou", age: 18)
+        let viewModel = UserInfoViewModel(userInfo: model)
+        viewController.viewModel = viewModel
+        self.present(viewController, animated: true, completion: nil)
     }
-
 
 }
 

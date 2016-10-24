@@ -38,6 +38,10 @@
                             <constraint firstItem="zUG-Hi-hyi" firstAttribute="centerX" secondItem="Ug4-6E-u86" secondAttribute="centerX" id="tXM-0Z-eVy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="retriveMoreButton" destination="I3L-QW-caA" id="3JH-W6-Wk2"/>
+                        <outlet property="userInfoLabel" destination="zUG-Hi-hyi" id="XHk-Cj-GDY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Svy-SQ-bbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
