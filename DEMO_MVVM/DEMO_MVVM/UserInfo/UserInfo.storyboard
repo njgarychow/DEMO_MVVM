@@ -27,21 +27,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3L-QW-caA">
                                 <state key="normal" title="retrive more"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8W-5P-5m8">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.053474997280036796" green="1" blue="0.084653931940764648" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="zUG-Hi-hyi" firstAttribute="top" secondItem="Sx0-Hq-Snm" secondAttribute="bottom" constant="303" id="21v-BZ-hiB"/>
                             <constraint firstItem="I3L-QW-caA" firstAttribute="top" secondItem="zUG-Hi-hyi" secondAttribute="bottom" constant="18" id="7Zx-3f-tnc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="e8W-5P-5m8" secondAttribute="leading" id="7cY-re-6Cz"/>
                             <constraint firstItem="I3L-QW-caA" firstAttribute="centerX" secondItem="Ug4-6E-u86" secondAttribute="centerX" id="97s-Gv-vSi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e8W-5P-5m8" secondAttribute="trailing" id="Rl8-fR-1ON"/>
+                            <constraint firstItem="e8W-5P-5m8" firstAttribute="top" secondItem="I3L-QW-caA" secondAttribute="bottom" constant="28" id="Wx9-9M-UzX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zUG-Hi-hyi" secondAttribute="trailing" id="b1x-ZX-kux"/>
                             <constraint firstAttribute="leadingMargin" secondItem="zUG-Hi-hyi" secondAttribute="leading" id="cNa-p8-Uqd"/>
                             <constraint firstItem="zUG-Hi-hyi" firstAttribute="centerX" secondItem="Ug4-6E-u86" secondAttribute="centerX" id="tXM-0Z-eVy"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loadingStatusLabel" destination="e8W-5P-5m8" id="IIa-Bg-ujh"/>
                         <outlet property="retriveMoreButton" destination="I3L-QW-caA" id="3JH-W6-Wk2"/>
                         <outlet property="userInfoLabel" destination="zUG-Hi-hyi" id="XHk-Cj-GDY"/>
-                        <segue destination="WIq-1Y-wDX" kind="show" id="oAU-uu-rj2"/>
+                        <segue destination="WIq-1Y-wDX" kind="show" identifier="DisplayUserInfoDetailsSegue" id="oAU-uu-rj2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Svy-SQ-bbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
